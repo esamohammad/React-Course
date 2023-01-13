@@ -1,50 +1,19 @@
 import './App.css';
-import Cssstyle from './components/Cssstyle/Cssstyle';
-import Mapping from './components/Mapping/Mapping';
-import Props from './components/Props/Props';
-import UniqueKey from './components/UniqueKey/UniqueKey';
-import data from './data.json'
+import Card from './components/Card/Card'
+import Data from './Data.json'
 
-
-const date = new Date();
-const today = date.getDate();
-const thisMonth = date.getMonth();
-const thisYear = date.getFullYear();
-
+// {/* map ar jonno data json file , akta component ar app js ai tin ta needed. */}
 
 function App() {
-console.log(data[0].title);
- let items=[];
- for(let x=0; x<data.length; x++){
-  items.push(<Props titleText={data[x].title} description={data[x].desc}></Props>)
 
- }
+  let items = [];
 
-
-
-
-
+  items = Data.map((item) => <Card titleText={item.title} description={item.desc}></Card>)
 
   return (
     <div className="App">
-      <h1>🚑🏍This is The Test Transmission🏍🚒</h1>
-      <h1>Css Style  Component</h1>
-      <Cssstyle />
-      <h1>Date Component</h1>
-      <h3> Date : {thisYear}</h3>
-      <h3>Ajker Tarikh:{today}</h3>
-      <h3>Month: {'' + thisMonth + 1}</h3>
-      <p>Today Date: {today + "/" + thisMonth + 1 + "/" + thisYear}</p>
-      <h1>Props Component</h1>
-      
-      <Props titleText={data[0].title} description={data[0].desc}></Props>
-
+      <h1>Mapping</h1>
       {items}
-      
-      <h1>Mapping Component</h1>
-      <Mapping></Mapping>
-      <h1>Unique Key Component</h1>
-      <UniqueKey />
     </div>
 
   );
