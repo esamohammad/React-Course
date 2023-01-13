@@ -1,5 +1,8 @@
 import './App.css';
-import UniqueKey from './components/UniqueKey/UniqueKey';
+import Mapping from './components/Mapping/Mapping';
+
+
+
 
 
 
@@ -9,7 +12,10 @@ function App() {
 
   return (
     <div className="App">
-    <UniqueKey></UniqueKey>
+     
+<Mapping></Mapping>
+
+
     </div>
 
 
