@@ -6,14 +6,10 @@ import Data from './Data.json'
 
 function App() {
 
-  let items = [];
-
-  items = Data.map((item) => <Card titleText={item.title} description={item.desc}></Card>)
-
   return (
     <div className="App">
       <h1>Mapping</h1>
-      {items}
+      {Data.map((item) => <Card titleText={item.title} description={item.desc}></Card>)}
     </div>
 
   );
