@@ -16,3 +16,4 @@ function App() {
 }
 
 export default App;
+// Maping ar jonno ai command ta dekhun
