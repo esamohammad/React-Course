@@ -14,4 +14,3 @@ const Card = (props) => {
 };
 
 export default Card;
-// Maping ar jonno ai command ta dekhun

@@ -9,11 +9,13 @@ function App() {
   return (
     <div className="App">
       <h1>Mapping</h1>
-      {Data.map((item) => <Card titleText={item.title} description={item.desc}></Card>)}
+      {Data.map((item,index) => <Card key={index} titleText={item.title} description={item.desc}></Card>)}
     </div>
+
+//unique key problems
+
 
   );
 }
 
 export default App;
-// Maping ar jonno ai command ta dekhun
