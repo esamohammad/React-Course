@@ -14,6 +14,16 @@ const thisYear = date.getFullYear();
 
 function App() {
 console.log(data[0].title);
+ let items=[];
+ for(let x=0; x<data.length; x++){
+  items.push(<Props titleText={data[x].title} description={data[x].desc}></Props>)
+
+ }
+
+
+
+
+
 
   return (
     <div className="App">
@@ -29,15 +39,8 @@ console.log(data[0].title);
       
       <Props titleText={data[0].title} description={data[0].desc}></Props>
 
-      <Props titleText={data[1].title} description={data[1].desc}></Props>
-
-      <Props titleText={data[2].title} description={data[2].desc}></Props>
-
-      <Props titleText={data[3].title} description={data[3].desc}></Props>
-
-      <Props titleText={data[4].title} description={data[4].desc}></Props>
-
-      <Props titleText='Call Father' description='Take your medicine'></Props>
+      {items}
+      
       <h1>Mapping Component</h1>
       <Mapping></Mapping>
       <h1>Unique Key Component</h1>
