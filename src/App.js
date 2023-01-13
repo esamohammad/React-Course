@@ -26,7 +26,17 @@ console.log(data[0].title);
       <h3>Month: {'' + thisMonth + 1}</h3>
       <p>Today Date: {today + "/" + thisMonth + 1 + "/" + thisYear}</p>
       <h1>Props Component</h1>
-      <Props titleText='Call Mother' description='Take your medicine'></Props>
+      
+      <Props titleText={data[0].title} description={data[0].desc}></Props>
+
+      <Props titleText={data[1].title} description={data[1].desc}></Props>
+
+      <Props titleText={data[2].title} description={data[2].desc}></Props>
+
+      <Props titleText={data[3].title} description={data[3].desc}></Props>
+
+      <Props titleText={data[4].title} description={data[4].desc}></Props>
+
       <Props titleText='Call Father' description='Take your medicine'></Props>
       <h1>Mapping Component</h1>
       <Mapping></Mapping>
