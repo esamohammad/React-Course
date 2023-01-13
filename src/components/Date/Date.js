@@ -9,10 +9,10 @@ const Date = () => {
     return (
         <div>
             <h1>🚑🏍This is The Test Transmission🏍🚒</h1>
-            <h3>{thisYear}</h3>
+            <h3> Date {thisYear}</h3>
             <h3>{today}</h3>
             <h3>{thisMonth}</h3>
-            <p>{today + "/" + thisMonth + 1 + "/" + thisYear}</p>
+            <p> Date {today + "/" + thisMonth + 1 + "/" + thisYear}</p>
         </div>
     );
 };

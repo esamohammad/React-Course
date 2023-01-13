@@ -16,15 +16,20 @@ function App() {
   return (
     <div className="App">
       <h1>🚑🏍This is The Test Transmission🏍🚒</h1>
-      <h3>{thisYear}</h3>
-      <h3>{today}</h3>
-      <h3>{thisMonth}</h3>
-      <p>{today + "/" + thisMonth + 1 + "/" + thisYear}</p>
-      <Mapping></Mapping>
+      <h1>Css Style  Component</h1>
+      <Cssstyle />
+      <h1>Date Component</h1>
+      <h3> Date : {thisYear}</h3>
+      <h3>Ajker Tarikh:{today}</h3>
+      <h3>Month: {'' + thisMonth + 1}</h3>
+      <p>Today Date: {today + "/" + thisMonth + 1 + "/" + thisYear}</p>
+      <h1>Props Component</h1>
       <Props titleText='Call Mother' description='Take your medicine'></Props>
       <Props titleText='Call Father' description='Take your medicine'></Props>
+      <h1>Mapping Component</h1>
+      <Mapping></Mapping>
+      <h1>Unique Key Component</h1>
       <UniqueKey />
-      <Cssstyle />
     </div>
 
   );
