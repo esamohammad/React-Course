@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { v4 as uuidv4 } from 'uuid';
 
 const names = [
     {
@@ -26,13 +26,16 @@ const names = [
 
 
 const UniqueKey = () => {
+    // console.log(uuidv4) //dekhte chaile
     return (
         <div>
-            {names.map((name, index) =>
-                <div key={index}>
+            {names.map((name) =>
+                <div key={uuidv4()}>
                     <h3>{name.title}</h3>
                     <p>{name.desc}</p>
+                    
                 </div>)}
+             
         </div>
     );
 };
