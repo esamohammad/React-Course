@@ -3,6 +3,7 @@ import Cssstyle from './components/Cssstyle/Cssstyle';
 import Mapping from './components/Mapping/Mapping';
 import Props from './components/Props/Props';
 import UniqueKey from './components/UniqueKey/UniqueKey';
+import data from './data.json'
 
 
 const date = new Date();
@@ -11,8 +12,9 @@ const thisMonth = date.getMonth();
 const thisYear = date.getFullYear();
 
 
-
 function App() {
+console.log(data);
+
   return (
     <div className="App">
       <h1>🚑🏍This is The Test Transmission🏍🚒</h1>
