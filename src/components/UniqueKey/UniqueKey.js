@@ -32,14 +32,17 @@ const names = [
 
 const UniqueKey = () => {
     // console.log(uuidv4) //dekhte chaile
+
     return (
         <div>
-            {names.map((name) =>
-                <div key={name.id}>
-                    <h3>{name.title}</h3>
-                    <p>{name.desc}</p>
+            {names.map((name) => {
+                const { id, title, desc } = name;
+                return (<div key={id}>
+                    <h3>{title}</h3>
+                    <p>{desc}</p>
 
-                </div>)}
+                </div>)
+            })}
 
         </div>
     );
