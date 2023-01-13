@@ -13,7 +13,7 @@ const thisYear = date.getFullYear();
 
 
 function App() {
-console.log(data);
+console.log(data[0]);
 
   return (
     <div className="App">
