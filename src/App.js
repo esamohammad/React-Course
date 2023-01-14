@@ -1,12 +1,13 @@
 import './App.css';
-import ReactIcons from './components/ReactIcons/ReactIcons';
+
 
 function App() {
 
   return (
     <div className="App">
-<ReactIcons></ReactIcons>
-      
+
+      {/* https://react-bootstrap.github.io/components/alerts/ */}
+      {/* React Bootstrup Directlly --- link  */}
     </div>
   );
 }

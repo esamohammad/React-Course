@@ -20,4 +20,4 @@ export default ReactIcons;
 
 //icon use kora r joono ... npm packege nilam ar por documentation ache ... sei onujayi kaj korlei hobe'
 // https://react-icons.github.io/react-icons/icons?name=fc
-// prottek catagorir jonno akta link import korte hobe;
+// prottek catagorir jonno akta link import korte
