@@ -1,5 +1,6 @@
 import './App.css';
-import Mapping from './components/Mapping/Mapping';
+import Card2 from './components/Card2.js/Card2';
+
 
 
 
@@ -12,8 +13,9 @@ function App() {
 
   return (
     <div className="App">
-     
-<Mapping></Mapping>
+     <Card2 title="Esa Ruhullah" age = "30"></Card2>
+     <Card2 title="Ahamadul Bari" age = "32"></Card2>
+
 
 
     </div>
