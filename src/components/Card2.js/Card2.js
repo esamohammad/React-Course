@@ -5,6 +5,7 @@ class Card2 extends Component {
         return (
             <div>
                 <h3>{this.props.title}</h3>
+               
             </div>
         );
     }

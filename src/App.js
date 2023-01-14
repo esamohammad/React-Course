@@ -1,28 +1,13 @@
 import './App.css';
-import Card2 from './components/Card2.js/Card2';
-
-
-
-
-
-
-
-
+import ReactIcons from './components/ReactIcons/ReactIcons';
 
 function App() {
 
   return (
     <div className="App">
-     <Card2 title="Esa Ruhullah" age = "30"></Card2>
-     <Card2 title="Ahamadul Bari" age = "32"></Card2>
-
-
-
+<ReactIcons></ReactIcons>
+      
     </div>
-
-
-
-
   );
 }
 

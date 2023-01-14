@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Cssstyle = () => {
-    return (
-        <div>
-            <h1>Css Style</h1>
-        </div>
-    );
-};
+class Cssstyle extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        );
+    }
+}
 
 export default Cssstyle;
