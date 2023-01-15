@@ -89,7 +89,7 @@ export default Index;
 
 
 
-
+/*
 //conditional rendaring system -3 ,Ternary Method-1
 
 import React, { Component } from 'react';
@@ -123,3 +123,58 @@ class Index extends Component {
 export default Index;
 
 //conditional rendaring system -3 ,Ternary Method-1
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------*\
+              This is the shortest way
+\*-------------------------------------------------*/
+
+
+//conditional rendaring system -3 ,Ternary Method-2
+
+import React, { Component } from 'react';
+import Login from './Login';
+import HomePage from './HomePage';
+
+
+
+
+
+class Index extends Component {
+  
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            isLoggedIn: false
+        }
+    }
+
+
+
+    render() {
+        const { isLoggedIn } = this.state //destructuring
+
+        return (
+            <div>
+                {isLoggedIn ? <HomePage /> : <Login />}
+            </div>
+        )
+    }
+}
+
+export default Index;
+
+//conditional rendaring system -3 ,Ternary Method-2
