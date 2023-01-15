@@ -1,15 +1,14 @@
-import './App.css';
+import React from 'react';
+import './App.css'
+import State from './State/State';
 
 
-function App() {
-
+const App = () => {
   return (
-    <div className="App">
-
-      {/* https://react-bootstrap.github.io/components/alerts/ */}
-      {/* React Bootstrup Directlly --- link  */}
+    <div className='App-header'>
+     <State></State>
     </div>
   );
-}
+};
 
 export default App;
