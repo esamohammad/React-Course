@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css'
-import State from './State/State';
+import Index from './ConditionalRendering/Index';
+
+
 
 
 const App = () => {
   return (
-    <div className='App-header'>
-     <State></State>
+    <div >
+    <Index></Index>
     </div>
   );
 };
