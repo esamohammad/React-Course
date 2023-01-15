@@ -1,5 +1,6 @@
 import React from 'react';
-import Index from './ConditionalRendering/Index';
+import Index from './Event-Handler-Class/Index';
+
 
 
 
